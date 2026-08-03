@@ -4,11 +4,19 @@
   <meta charset="UTF-8">
   <title>Content Manager</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/decap-cms@3.15.1/dist/cms.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
   <div id="cms"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.15.1/dist/decap-cms.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.reload();
+      });
+    }
+  </script>
 </body>
 </html>
