@@ -44,7 +44,7 @@ function renderWines(wines) {
       <div class="card-type">${w.type}</div>
       <div class="card-name">${w.title}</div>
       <div class="card-bottom">
-        <div class="card-price">${w.price}</div>
+        <div class="card-price">$${w.price}</div>
         <div class="card-region">${w.region}</div>
       </div>
     </div>`).join('');
