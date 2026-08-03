@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine Admin</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Jost', sans-serif; }
+    body { background: #faf7f2; color: #312f27; padding: 40px 20px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .card { background: #fff; border: 1px solid rgba(49,47,39,0.1); padding: 24px; margin-bottom: 20px; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 20px; }
+    input, textarea { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid rgba(49,47,39,0.2); background: #fff; font-size: 1rem; }
+    button { padding: 12px 24px; background: #312f27; color: #fff; border: none; cursor: pointer; font-size: 1rem; }
+    button:hover { background: #4a473d; }
+    .hidden { display: none; }
+    .wine-item { border-bottom: 1px solid rgba(49,47,39,0.1); padding: 12px 0; }
+    .wine-item:last-child { border-bottom: none; }
+    .label { font-weight: 500; color: #666; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    textarea { min-height: 120px; resize: vertical; }
+    pre { background: #f5f5f5; padding: 16px; overflow-x: auto; font-size: 0.9rem; border: 1px solid rgba(49,47,39,0.1); }
+    .success { color: #2d6a4f; background: #d8f3dc; padding: 12px; margin-top: 12px; }
+    .error { color: #9b2226; background: #f8d7da; padding: 12px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Wine Admin</h1>
+
+    <div id="login-section" class="card">
+      <div class="label">Enter admin password</div>
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="checkLogin()">Login</button>
+      <p id="login-error" class="error hidden">Incorrect password</p>
+    </div>
+
+    <div id="admin-section" class="hidden">
+      <div class="card">
+        <h2 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 16px;">Add New Wine</h2>
+        <input type="text" id="title" placeholder="Title (e.g. 2025 Cabernet Sauvignon)" />
+        <input type="text" id="price" placeholder="Price (e.g. $85)" />
+        <input type="text" id="type" placeholder="Type (e.g. Red)" />
+        <input type="text" id="region" placeholder="Region (e.g. Stags Leap District)" />
+        <input type="text" id="image" placeholder="Image path (e.g. /images/uploads/wine.jpg)" />
+        <textarea id="description" placeholder="Wine description..."></textarea>
+        <button onclick="generateWine()">Generate Markdown</button>
+        <div id="output" class="hidden">
+          <div class="label" style="margin-top: 20px;">Copy this to GitHub as <span id="filename"></span></div>
+          <pre id="markdown-output"></pre>
+          <button onclick="copyToClipboard()" style="margin-top: 12px;">Copy to Clipboard</button>
+          <p id="copy-msg" class="success hidden">Copied!</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 16px;">Existing Wines</h2>
+        <div id="wines-list">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const ADMIN_PASSWORD = 'admin123';
+
+    function checkLogin() {
+      const pw = document.getElementById('password').value;
+      if (pw === ADMIN_PASSWORD) {
+        document.getElementById('login-section').classList.add('hidden');
+        document.getElementById('admin-section').classList.remove('hidden');
+        loadWines();
+      } else {
+        document.getElementById('login-error').classList.remove('hidden');
+      }
+    }
+
+    document.getElementById('password').addEventListener('keypress', e => {
+      if (e.key === 'Enter') checkLogin();
+    });
+
+    async function loadWines() {
+      try {
+        const res = await fetch('wines.json');
+        const wines = await res.json();
+        const container = document.getElementById('wines-list');
+        if (wines.length === 0) {
+          container.innerHTML = '<p>No wines found.</p>';
+          return;
+        }
+        container.innerHTML = wines.map(w => `
+          <div class="wine-item">
+            <div><strong>${w.title || 'Untitled'}</strong> — ${w.price || ''}</div>
+            <div style="font-size: 0.9rem; color: #666;">${w.type || ''} · ${w.region || ''}</div>
+          </div>
+        `).join('');
+      } catch (e) {
+        document.getElementById('wines-list').innerHTML = '<p>Could not load wines.json</p>';
+      }
+    }
+
+    function generateWine() {
+      const title = document.getElementById('title').value.trim();
+      const price = document.getElementById('price').value.trim();
+      const type = document.getElementById('type').value.trim();
+      const region = document.getElementById('region').value.trim();
+      const image = document.getElementById('image').value.trim();
+      const description = document.getElementById('description').value.trim();
+
+      if (!title) { alert('Title is required'); return; }
+
+      const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      const filename = slug + '.md';
+
+      const frontmatter = [
+        '---',
+        `title: "${title}"`,
+        `price: "${price}"`,
+        `type: "${type}"`,
+        `region: "${region}"`,
+        `image: "${image}"`,
+        '---',
+        '',
+        description
+      ].filter(Boolean).join('\n');
+
+      document.getElementById('filename').textContent = filename;
+      document.getElementById('markdown-output').textContent = frontmatter;
+      document.getElementById('output').classList.remove('hidden');
+    }
+
+    function copyToClipboard() {
+      const text = document.getElementById('markdown-output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const msg = document.getElementById('copy-msg');
+        msg.classList.remove('hidden');
+        setTimeout(() => msg.classList.add('hidden'), 2000);
+      });
+    }
+  </script>
+</body>
+</html>
