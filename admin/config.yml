@@ -1,0 +1,24 @@
+backend:
+  name: test-repo
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "wines"
+    label: "Wines"
+
+    folder: "content/wines"
+
+    create: true
+
+    slug: "{{slug}}"
+
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+
+      - { label: "Price", name: "price", widget: "string" }
+
+      - { label: "Description", name: "body", widget: "markdown" }
+
+      - { label: "Image", name: "image", widget: "image" }
