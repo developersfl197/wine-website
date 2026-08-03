@@ -7,18 +7,6 @@
 </head>
 <body>
   <div id="cms"></div>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.1.4/dist/decap-cms.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.reload();
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>
