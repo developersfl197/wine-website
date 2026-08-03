@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: taylors040/wine-website
   branch: main
+  auth_type: token
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
