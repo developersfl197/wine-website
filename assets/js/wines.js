@@ -103,6 +103,6 @@ onScroll();
   });
 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeMenu();
+    if (e.key === 'Escape') closeMenu(); 
   });
 })();
