@@ -1,20 +1,7 @@
 async function loadWines() {
   try {
-    const res = await fetch('content/wines/');
-    const text = await res.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, 'text/html');
-    const links = Array.from(doc.querySelectorAll('a'));
-    const files = links.map(a => a.getAttribute('href')).filter(h => h && h.endsWith('.md'));
-    
-    const wines = [];
-    for (const file of files) {
-      const fileRes = await fetch(file);
-      const md = await fileRes.text();
-      const wine = parseFrontmatter(md);
-      wines.push(wine);
-    }
-    
+    const res = await fetch('wines.json');
+    const wines = await res.json();
     renderWines(wines);
   } catch (e) {
     console.error('Failed to load wines:', e);

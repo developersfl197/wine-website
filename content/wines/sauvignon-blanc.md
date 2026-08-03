@@ -1,6 +1,8 @@
 ---
 title: "2025 Sauvignon Blanc"
 price: "$55"
+type: "White"
+region: "Yountville"
 image: "/images/uploads/sauvignon-blanc.jpg"
 ---
 
