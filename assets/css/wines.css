@@ -222,12 +222,14 @@ nav.scrolled {
     padding: 40px 0 110px;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px 28px;
-     direction: rtl;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 28px;
 }
 
+.grid > * {
+  order: 1;
+}
 .card {
     cursor: default;
 }
