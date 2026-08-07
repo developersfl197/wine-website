@@ -1,6 +1,6 @@
 ---
 title: 2025 Sauvignon Blanc
-price: $55
+price: "55"
 type: Sauvignon Blanc
 region: Napa Valle
 image: /images/uploads/2025-sauvignon-blanc.png
