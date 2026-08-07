@@ -125,6 +125,15 @@ nav.scrolled {
     padding: 0 90px 82px;
     max-width: 860px;
 }
+.hero-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 12px;
+}
 
 .eyebrow {
     font-size: .65rem;
