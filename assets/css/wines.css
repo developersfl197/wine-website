@@ -225,6 +225,7 @@ nav.scrolled {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px 28px;
+     direction: rtl;
 }
 
 .card {
