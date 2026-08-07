@@ -230,6 +230,18 @@ nav.scrolled {
 .grid > * {
   order: 1;
 }
+.grid > *:nth-child(1) { order: 12; }
+.grid > *:nth-child(2) { order: 11; }
+.grid > *:nth-child(3) { order: 10; }
+.grid > *:nth-child(4) { order: 9; }
+.grid > *:nth-child(5) { order: 8; }
+.grid > *:nth-child(6) { order: 7; }
+.grid > *:nth-child(7) { order: 6; }
+.grid > *:nth-child(8) { order: 5; }
+.grid > *:nth-child(9) { order: 4; }
+.grid > *:nth-child(10) { order: 3; }
+.grid > *:nth-child(11) { order: 2; }
+.grid > *:nth-child(12) { order: 1; }
 .card {
     cursor: default;
 }
