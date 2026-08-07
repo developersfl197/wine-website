@@ -38,7 +38,7 @@ function renderWines(wines) {
         ${w.notes ? `<div class="card-overlay">
           <div class="overlay-notes">${w.notes}</div>
           <div class="overlay-divider"></div>
-          <div class="overlay-price">${w.price}</div>
+          <div class="overlay-price">$${w.price}</div>
         </div>` : ''}
       </div>
       <div class="card-type">${w.type}</div>
