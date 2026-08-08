@@ -18,7 +18,7 @@ const wines = files.map(file => {
 fs.writeFileSync(outputFile, JSON.stringify(wines, null, 2));
 
 function parseFrontmatter(md) {
-  const result = { title: '', price: '', image: '', notes: '', type: '', region: '' };
+  const result = { title: '', price: '', image: '', description: '', type: '', region: '' };
   const match = md.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
   if (match) {
     const fm = match[1];
@@ -34,7 +34,7 @@ function parseFrontmatter(md) {
         else if (key.trim() === 'region') result.region = value;
       }
     });
-    result.notes = body.replace(/[#*_]/g, '').substring(0, 200);
+    result.description = body;
   }
   return result;
 }

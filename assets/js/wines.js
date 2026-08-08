@@ -9,7 +9,7 @@ async function loadWines() {
 }
 
 function parseFrontmatter(md) {
-  const result = { title: '', price: '', image: '', notes: '', type: '', region: '' };
+  const result = { title: '', price: '', image: '', description: '', type: '', region: '' };
   const match = md.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
   if (match) {
     const fm = match[1];
@@ -23,7 +23,7 @@ function parseFrontmatter(md) {
         else if (key.trim() === 'image') result.image = value;
       }
     });
-    result.notes = body.replace(/[#*_]/g, '').substring(0, 200);
+    result.description = body;
   }
   return result;
 }
@@ -35,8 +35,8 @@ function renderWines(wines) {
     <div class="card fade-up">
       <div class="img-wrap">
         <img src="${w.image}" alt="${w.title}" loading="lazy" onerror="this.style.display='none'">
-        ${w.notes ? `<div class="card-overlay">
-          <div class="overlay-notes">${w.notes}</div>
+        ${w.description ? `<div class="card-overlay">
+          <div class="overlay-notes">${w.description}</div>
           <div class="overlay-divider"></div>
           <div class="overlay-price">$${w.price}</div>
         </div>` : ''}

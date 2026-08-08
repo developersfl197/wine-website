@@ -1,10 +1,98 @@
 [
   {
+    "title": "2021 Oakville",
+    "price": "125",
+    "image": "/images/uploads/2021-oakville.png",
+    "description": "2021 Oakville",
+    "type": "Cabernet Sauvignon",
+    "region": "Oakville"
+  },
+  {
+    "title": "2022 Cumulus",
+    "price": "275",
+    "image": "/images/uploads/2022-cumulus.png",
+    "description": "Our 2022 Cumulus Cabernet Sauvignon is the pinnacle of our portfolio, showcasing the finest elements of Napa Valley. This 100% Cabernet Sauvignon is a powerful blend of Stags Leap District, Diamond Mountain District, Oakville, and Atlas Peak. It opens with aromas of blackberry, cassis, wet stone, and dark chocolate. Concentrated flavors of forest berries and crushed stone are balanced by elegant tannins. Depth, refinement, and a long, persistent finish. Cumulus is the embodiment of Napa's diverse terroir, delivering a wine that is both luxurious and memorable.",
+    "type": "Cabernet Sauvignon",
+    "region": "Cabernet Sauvignon"
+  },
+  {
+    "title": "2022 Diamond Mountain",
+    "price": "185",
+    "image": "/images/uploads/2022-diamond-mountain.png",
+    "description": "High atop the rugged slopes of Diamond Mountain District in Napa Valley, our 2022 Diamond Mountain Cabernet Sauvignon takes on a character as bold as its origins. Notes of blackberry, blueberry, graphite, and cedar are enriched with mocha and spice. With a rich tannin structure and brooding textures, this wine is a true reflection of its mountain terroir.",
+    "type": "Cabernet Sauvignon",
+    "region": "Diamond Mountain Distric"
+  },
+  {
+    "title": "2022 Members' Exclusive",
+    "price": "135",
+    "image": "/images/uploads/2022-members-exclusive.png",
+    "description": "2022 Members' Exclusive",
+    "type": "Cabernet Sauvignon",
+    "region": "Napa Valley"
+  },
+  {
+    "title": "2022 Stags Leap District",
+    "price": "155",
+    "image": "/images/uploads/2022-stags-leap-district.png",
+    "description": "Our 2022 Stags Leap District Cabernet Sauvignon is a pure expression of this renowned region. Dark cherry, spice, violet, and tobacco unfold in layers, supported by refined tannins. Vibrant, structured, with a velvety finish, capturing the distinctive character and elegance of Stags Leap District Cabernet Sauvignon.",
+    "type": "Cabernet Sauvignon",
+    "region": "Stags Leap District"
+  },
+  {
+    "title": "2023 Atlas Peak",
+    "price": "95",
+    "image": "/images/uploads/2023-atlas-peak.png",
+    "description": "2023 Atlas Peak",
+    "type": "Cabernet Sauvignon",
+    "region": "Atlas Peak"
+  },
+  {
+    "title": "2023 Cabernet Franc",
+    "price": "105",
+    "image": "/images/uploads/2023-cabernet-franc.png",
+    "description": "Cabernet Franc is one of the wine world's hidden gems, and it holds a special place in our hearts. Our 2023 Cabernet Franc is vibrant and aromatic, showing black cherry, violets, and cigar box on the nose and flavors of blueberry, raspberry, and cocoa on the medium-bodied palate. Versatile at the table and a standout for collectors of unique varietals.",
+    "type": "Cabernet Franc",
+    "region": "Napa Valley"
+  },
+  {
+    "title": "2023 Hillside Chardonnay",
+    "price": "85",
+    "image": "/images/uploads/2023-hillside-chardonnay.png",
+    "description": "*Our 2023 Hillside Chardonnay opens up with fresh aromas of pear, Gala apple, and delicate jasmine. The palate is a delightful blend of flinty minerality and a creamy texture, reminiscent of panna cotta. Vibrant flavors of citrus, poached pear, and Tarte Tatin unfold on the palate. This Chardonnay is both lively and indulgent, with a long finish.*",
+    "type": "Chardonnay",
+    "region": "Napa Valle"
+  },
+  {
+    "title": "2023 Napa Valley",
+    "price": "85",
+    "image": "/images/uploads/2023-napa-valley.png",
+    "description": "*Grown on different sites throughout the Valley, our 2023 Napa Valley Cabernet has aromas of blackberry, plum, and dried herbs. The palate is silky and layered with forest fruits, spice, and vanilla, framed by supple tannins.*",
+    "type": "Cabernet Sauvignon",
+    "region": "Napa Valley"
+  },
+  {
+    "title": "2025 Rosé of Cabernet Sauvignon",
+    "price": "60",
+    "image": "/images/uploads/2025-rose-of-cabernet-sauvignon.png",
+    "description": "*Elegant yet playful, our 2025 Rosé is beautifully balanced, offering layers of freshness and complexity. Aromas of watermelon, bergamot, plumeria, and honeysuckle open into a vibrant palate of strawberry, raspberry, Rainier cherry, and blood orange. It balances juicy fruit with bright acidity. A natural companion for spring and summer gatherings, from light bites to al fresco dinners.*",
+    "type": "Rosé",
+    "region": "Napa Valley"
+  },
+  {
+    "title": "Five, Six, Seven",
+    "price": "125",
+    "image": "/images/uploads/five-six-seven.png",
+    "description": "This special wine represents the Fifth, Sixth and Seventh generations of Taylors in the Napa Valley who are a part of Taylor Family Vineyards today. The 2023 Five, Six, Seven is composed of 43% Cabernet Franc, 29% Petite Sirah and 28% Cabernet Sauvignon. The wine opens with aromas of black raspberry and blueberry, along with a hint of bay leaf and black pepper. On the palate, ripe dark fruit is supported by gentle barrel-toast notes of coffee, caramel, and vanilla. The texture is smooth and approachable.",
+    "type": "Red Blend",
+    "region": "Napa Valley"
+  },
+  {
     "title": "2025 Sauvignon Blanc",
-    "price": "$55",
-    "image": "/images/uploads/sauvignon-blanc.jpg",
-    "notes": "Crisp, vibrant, and beautifully expressive, our 2025 Sauvignon Blanc captures the brightness of Yountville in every glass. Aromas of tropical flowers, fresh pineapple, and lemon curd rise from the gla",
-    "type": "White",
-    "region": "Yountville"
+    "price": "55",
+    "image": "/images/uploads/2025-sauvignon-blanc.png",
+    "description": "*Crisp, vibrant, and beautifully expressive, our 2025 Sauvignon Blanc captures the brightness of Yountville in every glass. Aromas of tropical flowers, fresh pineapple, and lemon curd rise from the glass, unfolding into lively flavors of key lime, pink grapefruit, Fuji apple, and honeydew. Equally delightful on its own or paired with fresh seafood, salads, and seasonal fare.*",
+    "type": "Sauvignon Blanc",
+    "region": "Napa Valle"
   }
 ]
