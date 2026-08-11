@@ -1,8 +1,8 @@
 ---
-title: 2023 Cabernet Franc
-price: "105"
-type: Cabernet Franc
+title: Five, Six, Seven
+price: "125"
+type: Red Blend
 region: Napa Valley
-image: /images/uploads/2023-cabernet-franc.png
+image: /images/uploads/five-six-seven.png
 ---
-Cabernet Franc is one of the wine world's hidden gems, and it holds a special place in our hearts. Our 2023 Cabernet Franc is vibrant and aromatic, showing black cherry, violets, and cigar box on the nose and flavors of blueberry, raspberry, and cocoa on the medium-bodied palate. Versatile at the table and a standout for collectors of unique varietals.
+This special wine represents the Fifth, Sixth and Seventh generations of Taylors in the Napa Valley who are a part of Taylor Family Vineyards today. The 2023 Five, Six, Seven is composed of 43% Cabernet Franc, 29% Petite Sirah and 28% Cabernet Sauvignon. The wine opens with aromas of black raspberry and blueberry, along with a hint of bay leaf and black pepper. On the palate, ripe dark fruit is supported by gentle barrel-toast notes of coffee, caramel, and vanilla. The texture is smooth and approachable.
