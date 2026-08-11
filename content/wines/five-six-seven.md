@@ -1,8 +1,8 @@
 ---
-title: Five, Six, Seven
-price: "125"
-type: Red Blend
-region: Napa Valley
-image: /images/uploads/five-six-seven.png
+title: 2022 Diamond Mountain
+price: "185"
+type: Cabernet Sauvignon
+region: Diamond Mountain District
+image: /images/uploads/2022-diamond-mountain.png
 ---
-This special wine represents the Fifth, Sixth and Seventh generations of Taylors in the Napa Valley who are a part of Taylor Family Vineyards today. The 2023 Five, Six, Seven is composed of 43% Cabernet Franc, 29% Petite Sirah and 28% Cabernet Sauvignon. The wine opens with aromas of black raspberry and blueberry, along with a hint of bay leaf and black pepper. On the palate, ripe dark fruit is supported by gentle barrel-toast notes of coffee, caramel, and vanilla. The texture is smooth and approachable.
+High atop the rugged slopes of Diamond Mountain District in Napa Valley, our 2022 Diamond Mountain Cabernet Sauvignon takes on a character as bold as its origins. Notes of blackberry, blueberry, graphite, and cedar are enriched with mocha and spice. With a rich tannin structure and brooding textures, this wine is a true reflection of its mountain terroir.
