@@ -1,8 +1,8 @@
 ---
-title: 2025 Rosé of Cabernet Sauvignon
-price: "60"
-type: Rosé
-region: Napa Valley
-image: /images/uploads/2025-rose-of-cabernet-sauvignon.png
+title: 2022 Stags Leap District
+price: "155"
+type: Cabernet Sauvignon
+region: Stags Leap District
+image: /images/uploads/2022-stags-leap-district.png
 ---
-*Elegant yet playful, our 2025 Rosé is beautifully balanced, offering layers of freshness and complexity. Aromas of watermelon, bergamot, plumeria, and honeysuckle open into a vibrant palate of strawberry, raspberry, Rainier cherry, and blood orange. It balances juicy fruit with bright acidity. A natural companion for spring and summer gatherings, from light bites to al fresco dinners.*
+*Our 2022 Stags Leap District Cabernet Sauvignon is a pure expression of this renowned region. Dark cherry, spice, violet, and tobacco unfold in layers, supported by refined tannins. Vibrant, structured, with a velvety finish, capturing the distinctive character and elegance of Stags Leap District Cabernet Sauvignon.*
