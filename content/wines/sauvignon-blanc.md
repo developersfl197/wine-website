@@ -1,8 +1,8 @@
 ---
-title: 2025 Sauvignon Blanc
-price: "55"
-type: Sauvignon Blanc
-region: Napa Valle
-image: /images/uploads/2025-sauvignon-blanc.png
+title: 2022 Cumulus
+price: "275"
+type: Cabernet Sauvignon
+region: Napa Valley
+image: /images/uploads/2022-cumulus.png
 ---
-*Crisp, vibrant, and beautifully expressive, our 2025 Sauvignon Blanc captures the brightness of Yountville in every glass. Aromas of tropical flowers, fresh pineapple, and lemon curd rise from the glass, unfolding into lively flavors of key lime, pink grapefruit, Fuji apple, and honeydew. Equally delightful on its own or paired with fresh seafood, salads, and seasonal fare.*
+*Our 2022 Cumulus Cabernet Sauvignon is the pinnacle of our portfolio, showcasing the finest elements of Napa Valley. This 100% Cabernet Sauvignon is a powerful blend of Stags Leap District, Diamond Mountain District, Oakville, and Atlas Peak. It opens with aromas of blackberry, cassis, wet stone, and dark chocolate. Concentrated flavors of forest berries and crushed stone are balanced by elegant tannins. Depth, refinement, and a long, persistent finish. Cumulus is the embodiment of Napa's diverse terroir, delivering a wine that is both luxurious and memorable.*
