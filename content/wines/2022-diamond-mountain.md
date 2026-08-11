@@ -1,8 +1,8 @@
 ---
-title: 2022 Diamond Mountain
-price: "185"
-type: Cabernet Sauvignon
-region: Diamond Mountain Distric
-image: /images/uploads/2022-diamond-mountain.png
+title: 2023 Hillside Chardonnay
+price: "85"
+type: Chardonnay
+region: Napa Valley
+image: /images/uploads/2023-hillside-chardonnay.png
 ---
-High atop the rugged slopes of Diamond Mountain District in Napa Valley, our 2022 Diamond Mountain Cabernet Sauvignon takes on a character as bold as its origins. Notes of blackberry, blueberry, graphite, and cedar are enriched with mocha and spice. With a rich tannin structure and brooding textures, this wine is a true reflection of its mountain terroir.
+Our 2023 Hillside Chardonnay opens up with fresh aromas of pear, Gala apple, and delicate jasmine. The palate is a delightful blend of flinty minerality and a creamy texture, reminiscent of panna cotta. Vibrant flavors of citrus, poached pear, and Tarte Tatin unfold on the palate. This Chardonnay is both lively and indulgent, with a long finish.
